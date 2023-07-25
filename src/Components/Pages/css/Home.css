@@ -1,0 +1,197 @@
+.img-sec img
+{
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-blend-mode: lighten;
+}
+
+.img-sec
+{
+    background-color: #66cff1;
+    border: 2px solid #c5c6c7;
+    width: 323px;
+    height:323px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 20rem;
+    top: 16rem;
+}
+
+
+.card1
+{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    color: #5c5e61;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 16rem;
+    z-index: 1;
+}
+
+.cc1
+{
+    position: absolute;
+    right: 34rem;
+    top: 14rem;
+    z-index: 5;
+}
+.cc2
+{
+    position: absolute;
+    right: 8rem;
+    top: 23rem;
+    z-index: 5;
+}
+.cc3
+{
+    position: absolute;
+    right: 35rem;
+    top: 32rem;
+    z-index: 5;
+}
+
+.c1
+{
+    width: 40px;
+    height: 40px;
+    /* object-fit: cover; */
+    /* border-radius: 50%; */
+    /* background-blend-mode: lighten; */
+}
+
+.blur2
+{
+    position: absolute;
+    width: 19rem;
+    height: 19rem;
+    border-radius: 50%;
+    background: #66cff1;
+    /* filter: blur(100px); */
+    z-index: 0;
+    right: -5rem;
+    top: 12rem;
+}
+.blur3
+{
+    position: absolute;
+    width: 19rem;
+    height: 19rem;
+    border-radius: 50%;
+    background: #66cff1;
+    /* filter: blur(100px); */
+    z-index: 0;
+    right: 12rem;
+    top: 32rem;
+}
+
+.iconsdiv>*
+{
+    cursor: pointer;
+}
+
+@media screen and (max-width : 640px) {
+
+    /* Left portion of home */
+    .home
+    {
+        position: relative;
+        height: 78rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0;
+        width: 100%;
+        /* background-color: yellow; */
+        padding: 0;
+        padding-top: 2rem;
+    }
+
+    .home>*
+    {
+        /* width: 30rem; */
+    }
+
+    .heading
+    {
+        /* position: relative; */
+        font-size: 1.6rem;
+        text-align: center;
+        /* width: 30rem; */
+        /* background-color: red; */
+    }
+    
+    .home-left
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        display: flex;
+        width: 100%;
+    }
+
+    .home-left div
+    {
+        /* width: 100%; */
+        /* background-color: red; */
+        /* padding: 0 1rem; */
+        text-align: center;
+    }
+
+    .iconcontainer
+    {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        /* background-color: red; */
+    }
+
+    .btn
+    {
+        /* background-color: red; */
+        width: 120px;
+        margin: 0 auto;
+    }
+
+    /* Right portion */
+    
+    .home-right
+    {
+        /* position: relative; */
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        /* background-color: rebeccapurple; */
+        width: 100%;
+        flex: 1;
+        /* margin-top: 5rem; */
+    }
+
+    .cc1 , .cc2 , .cc3{
+        display: none;
+    }
+
+    .home-right div
+    {
+        
+    }
+
+    .img-sec
+    {
+        position: inherit;
+        margin-top: 0rem;
+    }
+
+    .img-sec img
+    {
+        position: inherit;
+    }
+}

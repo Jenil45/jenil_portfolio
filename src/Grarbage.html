@@ -1,0 +1,182 @@
+<!-- // import React, { useRef } from "react";
+// import "./css/Skill.css";
+// import SkillCard from "../SubElement/SkillCard";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { Navigation, Pagination, Autoplay } from "swiper";
+// import "swiper/css";
+// import { data } from "../../Data/Skill.js";
+
+// const Skills = () => {
+//   var skills = data.data;
+//   const swiperRefLocal = useRef();
+
+//   const handleMouseEnter = () => {
+//     swiperRefLocal?.current?.swiper?.autoplay?.stop();
+//   };
+
+//   const handleMouseLeave = () => {
+//     swiperRefLocal?.current?.swiper?.autoplay?.start();
+//   };
+//   return (
+//     <div id="Skills" className="h-[45rem] py-[5rem] md:px-[2rem] text-center">
+//       <div>
+//         <h1 className="text-[3rem]">Skill section</h1>
+//         <div className="flex gap-[1.2rem] items-center justify-center">
+//           <div className=" h-[0.4rem] w-[0.4rem] rounded-full bg-[#29b4e3]"></div>
+//           <div className=" h-[0.4rem] w-[0.4rem] rounded-full bg-[#29b4e3]"></div>
+//           <div className=" h-[0.2rem] w-[20rem] rounded-full bg-[#29b4e3]"></div>
+//           <div className=" h-[0.4rem] w-[0.4rem] rounded-full bg-[#29b4e3]"></div>
+//           <div className=" h-[0.4rem] w-[0.4rem] rounded-full bg-[#29b4e3]"></div>
+//         </div>
+//       </div>
+
+//       <div
+//         className="skillcontainer flex gap-[1.5rem] flex-wrap mt-[2.5rem] h-[25rem]  items-center justify-center"
+//         onMouseEnter={handleMouseEnter}
+//         onMouseLeave={handleMouseLeave}
+//       >
+//         <Swiper
+//           slidesPerView={8}
+//           spaceBetween={30}
+//           slidesPerGroup={1}
+//           speed={1000}
+//           autoplay={{
+//             delay: 0,
+//             disableOnInteraction: false,
+//             pauseOnMouseEnter: true,
+//           }}
+//           loop={true}
+//           loopFillGroupWithBlank={true}
+//           breakpoints={{
+//             // when window width is >= 320px
+//             320: {
+//               slidesPerView: 1,
+//               spaceBetween: 150,
+//             },
+//             // when window width is >= 480px
+//             640: {
+//               slidesPerView: 3,
+//               spaceBetween: 30,
+//             },
+//             // when window width is >= 640px
+//             640: {
+//               slidesPerView: 4,
+//               spaceBetween: 180,
+//             },
+//             768: {
+//               slidesPerView: 6,
+//               spaceBetween: 40,
+//             },
+//           }}
+//           modules={[Autoplay, Navigation, Pagination]}
+//           className="mySwiper"
+//         >
+//           {skills.map((skill) => {
+//             return (
+//               <SwiperSlide className="flex items-center ml-[1.5rem]  md:items-center md:justify-center mt-[5rem]">
+//                 <SkillCard
+//                   rate={skill.rate}
+//                   image={skill.image}
+//                   content={skill.name}
+//                 />
+//               </SwiperSlide>
+//             );
+//           })}
+//         </Swiper>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Skills; -->
+
+
+<div id="Education"
+    className="md:h-[55rem] py-[5rem] text-center relative bg-[#0b0c10] mt-[2rem]  rounded-t-[10rem] rounded-b-[10rem]">
+    <div>
+        <h1 className="text-[3rem] text-[white]">Education section</h1>
+        <div className="flex gap-[1.2rem] items-center justify-center">
+            <div className=" h-[0.4rem] w-[0.4rem] rounded-full bg-[#29b4e3]"></div>
+            <div className=" h-[0.4rem] w-[0.4rem] rounded-full bg-[#29b4e3]"></div>
+            <div className=" h-[0.2rem] w-[28rem] rounded-full bg-[#29b4e3]"></div>
+            <div className=" h-[0.4rem] w-[0.4rem] rounded-full bg-[#29b4e3]"></div>
+            <div className=" h-[0.4rem] w-[0.4rem] rounded-full bg-[#29b4e3]"></div>
+        </div>
+    </div>
+    <div className="education">
+        <div className="timeline try">
+            <div className="container try">
+                <div className="logo w-[2rem] h-[2rem] rounded-full bg-[#66cff1]"></div>
+                <div className="textbox">
+                    <div className="t-left">
+                        <h1>Image</h1>
+                    </div>
+                    <div className="t-right">
+                        <span className="text-[#0b0c10]">{props.range}</span>
+                        <div className="tr-content mt-[1rem]">
+                            <span className="text-[#0b0c10] text-[1.3rem]">{props.type}</span>
+                            <span className="text-[#0b0c10] text-[1.3rem]">
+                                {props.organization}
+                            </span>
+                        </div>
+                    </div>
+                    <span className="arrow"></span>
+                </div>
+            </div>
+            <div className="container try">
+                <div className="logo w-[2rem] h-[2rem] rounded-full bg-[#66cff1]"></div>
+                <div className="textbox">
+                    <div className="t-left">
+                        <h1>Image</h1>
+                    </div>
+                    <div className="t-right">
+                        <span className="text-[#0b0c10]">{props.range}</span>
+                        <div className="tr-content mt-[1rem]">
+                            <span className="text-[#0b0c10] text-[1.3rem]">{props.type}</span>
+                            <span className="text-[#0b0c10] text-[1.3rem]">
+                                {props.organization}
+                            </span>
+                        </div>
+                    </div>
+                    <span className="arrow"></span>
+                </div>
+            </div>
+            <div className="container try">
+                <div className="logo w-[2rem] h-[2rem] rounded-full bg-[#66cff1]"></div>
+                <div className="textbox">
+                    <div className="t-left">
+                        <h1>Image</h1>
+                    </div>
+                    <div className="t-right">
+                        <span className="text-[#0b0c10]">{props.range}</span>
+                        <div className="tr-content mt-[1rem]">
+                            <span className="text-[#0b0c10] text-[1.3rem]">{props.type}</span>
+                            <span className="text-[#0b0c10] text-[1.3rem]">
+                                {props.organization}
+                            </span>
+                        </div>
+                    </div>
+                    <span className="arrow"></span>
+                </div>
+            </div>
+            <div className="container try">
+                <div className="logo w-[2rem] h-[2rem] rounded-full bg-[#66cff1]"></div>
+                <div className="textbox">
+                    <div className="t-left">
+                        <h1>Image</h1>
+                    </div>
+                    <div className="t-right">
+                        <span className="text-[#0b0c10]">{props.range}</span>
+                        <div className="tr-content mt-[1rem]">
+                            <span className="text-[#0b0c10] text-[1.3rem]">{props.type}</span>
+                            <span className="text-[#0b0c10] text-[1.3rem]">
+                                {props.organization}
+                            </span>
+                        </div>
+                    </div>
+                    <span className="arrow"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

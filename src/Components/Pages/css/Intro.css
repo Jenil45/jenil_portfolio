@@ -1,0 +1,159 @@
+.intro
+{
+    display: flex;
+}
+
+.i-left
+{
+    flex: 1;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* background-color: red; */
+}
+
+.i-left>*
+{
+    width: 85%;
+    margin: 0 auto;
+    /* background-color: blue; */
+}
+
+.i-left>h1
+{
+    /* -webkit-text-stroke: 1px #66cff1; */
+    font-weight: bold;
+}
+
+.i-right
+{
+    position: relative;
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blue; */
+}
+
+.i-sec
+{
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 5px rgba(72, 71, 71, 0.227);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.i-sec img
+{
+    width: 325px;
+    height: 325px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.i-design
+{
+    position: absolute;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    /* background-color: rgba(185, 179, 179, 0.041); */
+    box-shadow: 0 0 3px 3px rgba(72, 71, 71, 0.227);
+    top: 44%;
+    left: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .i-design:nth-child(1)
+{
+    background-color: red;
+} */
+.i-design:nth-child(2)
+{
+    top: 20%;
+    left: 25%;
+}
+.i-design:nth-child(3)
+{
+    top: 69%;
+    left: 25%;
+}
+.i-design:nth-child(4)
+{
+    top: 69%;
+    left: 67%;
+}
+.i-design:nth-child(5)
+{
+    top: 44%;
+    left: 73%;
+}
+.i-design:nth-child(6)
+{
+    top: 20%;
+    left: 67%;
+}
+.i-design:nth-child(7)
+{
+    top: 8%;
+    left: 47%;
+}
+.i-design:nth-child(8)
+{
+    top: 82%;
+    left: 47%;
+}
+
+.i-design img
+{
+    width: 60px;
+    height: 60px;
+}
+
+.anim
+{
+    transition: 0.4s ease-in-out;
+    /* animation: moveround 2s infinite; */
+}
+
+/* @keyframes moveround {
+    0%
+    {
+        transform: scale(1);
+    }
+    100%
+    {
+        transform: scale(1.1);
+    }
+} */
+
+.anim:hover
+{
+    transform: scale(1.1);
+}
+
+
+/* Responsive */
+@media screen and (max-width : 640px) {
+    #Intro
+    {
+        height: 50rem;
+        width: 100%;
+    }
+    .i-right
+    {
+        display: none;
+    }
+
+    .i-left
+    {
+        padding: 0.1rem;
+    }
+}

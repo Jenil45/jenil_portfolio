@@ -1,0 +1,85 @@
+
+.ratingdiv
+{
+    /* width: calc(63%); */
+    height: 0.4rem;
+    background-color: red;
+}
+
+.imglogo{
+    width: 5.4rem;
+    height: 5.4rem;
+}
+
+.skillcard
+{
+    transition-duration: 1600ms;
+    transition-delay: 800ms;
+    transition: ease-in-out;
+}
+
+.skillcard:hover
+{
+    /* transform: scale3d(); */
+}
+
+.slider
+{
+    margin: auto;
+    /* background-color: red; */
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slide-track
+{
+    width: calc(250px*18);
+    margin-top: 5rem;
+    /* background-color: red; */
+    padding: 2rem;
+    display: flex;
+    gap: 1.3rem;
+    animation: scroll 15s linear infinite;
+
+    &:hover
+    {
+        animation-delay: 1s;
+        animation-play-state: paused;
+    }
+}
+
+
+
+@keyframes scroll
+{
+    0%  {
+        transform: translateX(0);
+    }
+    100%  {
+        transform: translateX(calc(-250px * 9));
+    }
+}
+.slide
+{
+    width: 12rem;
+    height: 14rem;
+    /* background-color: yellow; */
+}
+
+.slide:hover ~ .slide-track
+{
+    animation-play-state: paused;
+}
+
+/* Responsiveness */
+@media screen and (max-width : 640px) {
+
+    .skillcontainer
+    {
+        /* background-color: red; */
+    }
+
+}

@@ -1,0 +1,67 @@
+.s-right
+{
+    width: 80%;
+    margin: 5rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4.8rem;
+    flex-wrap: wrap;
+}
+
+.s-card
+{
+    height: 12rem;
+    width: 12rem;
+    background-color: #66cff1;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.3rem;
+}
+
+.s-card:hover>div
+{
+    transform: scale(1.1);
+}
+
+/* Responsiveness */
+
+@media screen and (max-width : 640px) {
+    #Services
+    {
+        border-radius: 0;
+        margin-top: 6rem;
+        height: 55rem;
+        width: 100%;
+        padding: 0;
+        padding-top: 3rem;
+    }
+
+    .s-right
+    {
+        /* background-color: red; */
+        width: 100%;
+        gap: 2rem;
+    }
+
+    .s-card
+    {
+        height: 8rem;
+        width: 8rem;
+        gap: 0.3rem;
+        padding: 0.1rem;
+    }
+
+    .s-card div > *
+    {
+        width: 40px;
+    }
+
+    .s-card h1
+    {
+        font-size: 16px;
+    }
+}

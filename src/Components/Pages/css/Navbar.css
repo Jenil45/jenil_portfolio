@@ -1,0 +1,52 @@
+.menu-btn
+{
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width : 640px) {
+    #Navbar
+    {
+        width: 100%;
+    }
+
+    .n-right .list
+    {
+        position: absolute;
+        background-color: black;
+        right: 0;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        /* display: none; */
+    }
+
+    .list ul
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding-top: 5rem;
+    }
+
+    .menu-btn
+    {
+        display: block;
+    }
+
+    .s-active
+    {
+        transform: translatey(0%);
+    }
+
+    .s-deactivate
+    {
+        transform: translateY(-100%);
+    }
+
+    .close
+    {
+        position: absolute;
+        z-index: 555;
+    }
+}

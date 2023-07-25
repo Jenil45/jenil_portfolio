@@ -1,0 +1,88 @@
+.colors
+{
+    background-color: #0b0c10;
+    background-color: #1f2833;
+    background-color: #c5c6c7;
+    background-color: #66cff1;
+    background-color: #45a29e;
+}
+
+.projectcard
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 28rem;
+    height: 23rem;
+    background-color: white;
+    border-radius: 0.6rem;
+    box-shadow: 0 0 5px 5px #383a4315;
+    padding: 1rem;
+    overflow: hidden;
+    /* border: 1px solid rgba(0, 0, 0, 0.511); */
+}
+
+.projectcard:hover
+{
+    box-shadow: 0 0 5px 5px #21222a31;
+}
+
+.projectcard .image
+{
+    /* position: relative; */
+    width: 80%;
+    margin: 0 auto;
+    height: 60%;
+    background-color: #46494a7c;
+    border-radius: 0.6rem;
+    /* border: 1px solid black; */
+    /* padding: 0.3rem; */
+}
+
+/* .projectcard .image:hover::after
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #1f28335a;
+    left: 0;
+    top: 0;
+    border-radius: 0.6rem;
+} */
+
+.projectcard .infocard
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.70);
+    color: white;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.6rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    padding: 1rem;
+    transform: translateY(-100%);
+    transition: 0.8s ease-in-out;
+    
+}
+
+.projectcard:hover .infocard
+{
+    transform: translateY(0%);
+}
+
+.projectsec
+{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
