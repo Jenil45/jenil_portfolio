@@ -53,11 +53,8 @@ const Home = () => {
           <span className="heading text-[4.1rem] text-[#66cff1]">
             Jenil Thakor
           </span>
-          <span>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates
-            sint quia ducimus fugit harum doloribus debitis excepturi! Beatae
-            doloremque nihil reiciendis tenetur optio ea voluptatum atque,
-            incidunt cumque, accusantium laudantium!
+          <span className="text-[1.6rem]">
+            "The Secret of getting ahead is getting started."
           </span>
           <a href="../../Data/Resume/Jenil_Thakor_Resume.pdf" download>
             <div className="btn px-1 py-2 w-[2rem] text-[#1f2833] bg-[#66cff1] flex items-center justify-center rounded-[1.4rem]">

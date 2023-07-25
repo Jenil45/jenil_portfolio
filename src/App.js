@@ -1,5 +1,5 @@
 import './App.css';
-import {Navbar , Home , Project , Services , Skills  , Contact , Education } from './Components/Pages';
+import {Navbar , Home , Project , Services , Skills , Achievements , Contact , Education , Footer} from './Components/Pages';
 import Intro from './Components/Pages/Intro';
 
 function App() {
