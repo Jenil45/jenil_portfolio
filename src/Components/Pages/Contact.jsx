@@ -30,6 +30,7 @@ const Contact = () => {
       <div className="contact md:mt-[12rem]">
         <div className="c-left">
           <form onSubmit={handleSubmit}>
+            {/* Contact form */}
             <h1 className="text-[1.5rem] pb-[0.3rem] border-none border-b-[2px] border-b-[black]">
               Send Message
             </h1>
