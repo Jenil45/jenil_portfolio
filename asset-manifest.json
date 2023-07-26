@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jenil_portfolio/static/css/main.bf85c9b5.css",
-    "main.js": "/jenil_portfolio/static/js/main.b01e50db.js",
+    "main.css": "/jenil_portfolio/static/css/main.abc9c4a2.css",
+    "main.js": "/jenil_portfolio/static/js/main.78172307.js",
     "static/media/ijob.png": "/jenil_portfolio/static/media/ijob.4c98ddb4fc0ccfcc5029.png",
     "static/media/homefood.png": "/jenil_portfolio/static/media/homefood.57ac30ea19375e167109.png",
     "static/media/p3.png": "/jenil_portfolio/static/media/p3.9526f9f0e477749a82b0.png",
@@ -24,11 +24,11 @@
     "static/media/postman.png": "/jenil_portfolio/static/media/postman.c7a66f1a86ec9c81474e.png",
     "static/media/html.png": "/jenil_portfolio/static/media/html.98f3ec665295bc156f32.png",
     "index.html": "/jenil_portfolio/index.html",
-    "main.bf85c9b5.css.map": "/jenil_portfolio/static/css/main.bf85c9b5.css.map",
-    "main.b01e50db.js.map": "/jenil_portfolio/static/js/main.b01e50db.js.map"
+    "main.abc9c4a2.css.map": "/jenil_portfolio/static/css/main.abc9c4a2.css.map",
+    "main.78172307.js.map": "/jenil_portfolio/static/js/main.78172307.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf85c9b5.css",
-    "static/js/main.b01e50db.js"
+    "static/css/main.abc9c4a2.css",
+    "static/js/main.78172307.js"
   ]
 }
