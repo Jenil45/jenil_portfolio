@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./css/Contact.css";
 import ContactCard from "../SubElement/ContactCard";
 import Itag from "../SubElement/Itag";
@@ -6,10 +6,18 @@ import { contactdetail, contactinfo } from "../../Data/Contact";
 import Github from "@iconscout/react-unicons/icons/uil-github";
 import Linkedin from "@iconscout/react-unicons/icons/uil-linkedin";
 import Twitter from "@iconscout/react-unicons/icons/uil-twitter";
+import { useForm, ValidationError } from "@formspree/react";
 
 const Contact = () => {
   const ci = contactinfo.data;
   const cd = contactdetail.data;
+  const [res, setRes] = useState(false);
+
+  const [state, handleSubmit] = useForm("mknlglgw");
+  if (state.succeeded) {
+    // setRes(true);
+    // return;
+  }
 
   return (
     <div
@@ -21,18 +29,29 @@ const Contact = () => {
       </div>
       <div className="contact md:mt-[12rem]">
         <div className="c-left">
-          <form action="">
+          <form onSubmit={handleSubmit}>
             <h1 className="text-[1.5rem] pb-[0.3rem] border-none border-b-[2px] border-b-[black]">
               Send Message
             </h1>
+            {res ? (
+              <h1 className="bg-[black] rounded p-[0.2rem] flex items-center text-[0.7rem] gap-[0.7rem] pb-[0.3rem] text-[#66cff1] border-none border-b-[2px] border-b-[black]">
+                <div>
+                  Your mail has been sent! We will look after your message
+                </div>
+                <div className="close text-[white] cursor-pointer">X</div>
+              </h1>
+            ) : (
+              ""
+            )}
+
             {cd.map((c) => {
-              return <Itag name={c.deatail1} />;
+              return <Itag name={c.deatail1} important={c.name} />;
             })}
             <div className="i-tag">
-              <textarea />
+              <textarea required="required" name="message" id="message" />
               <span>Type your message here...</span>
             </div>
-            <button type="submit" className="btn">
+            <button type="submit" disabled={state.submitting} className="btn">
               Send
             </button>
           </form>

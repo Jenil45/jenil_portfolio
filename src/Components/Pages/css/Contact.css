@@ -99,7 +99,7 @@
     color: #666;
 }
 
-.i-tag input:focus ~ span , .i-tag textarea:focus ~ span
+.i-tag input:focus ~ span , .i-tag textarea:focus ~ span,.i-tag input:valid ~ span , .i-tag textarea:valid ~ span
 {
     font-weight: bold;
     color: #31c3f4;

@@ -9,9 +9,11 @@ const contactdetail = {
         
         {
             deatail1 : "Full Name" ,
+            name : "name"
         },
         {
             deatail1 : "Email" ,
+            name : "email"
         }
 ]
 }
